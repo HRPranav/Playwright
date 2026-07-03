@@ -2,7 +2,9 @@
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "generate-workflow-options": "node scripts/generate-workflow-options.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -11,7 +13,8 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^22.15.18",
-    "allure-playwright": "^3.8.0"
+    "allure-playwright": "^3.8.0",
+    "js-yaml": "^4.1.0"
   },
   "dependencies": {
     "csv-parse": "^6.2.1",
