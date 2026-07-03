@@ -31,16 +31,16 @@ test.beforeAll(async({browser})=>{
 })
 
 //Enable only if navigate to product listing screen in backoffice is set false
-test.skip("Homepage actions",async({})=>{
+// test.skip("Homepage actions",async({})=>{
 
-    //home page 
+//     //home page 
 
-    const home=new Byodhomepage(page);
-    await page.waitForTimeout(3000)
-    home.onclickclothesandshoes()
-    await page.waitForTimeout(5000)
+//     const home=new Byodhomepage(page);
+//     await page.waitForTimeout(3000)
+//     home.onclickclothesandshoes()
+//     await page.waitForTimeout(5000)
 
-})
+// })
 
 test("Item listing screen",async({})=>{
 
