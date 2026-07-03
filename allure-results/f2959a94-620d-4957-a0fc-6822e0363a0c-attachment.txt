@@ -1,0 +1,16 @@
+Promise {
+  <rejected> TypeError: Cannot read properties of undefined (reading 'click')
+      at Byoditemlistingpage.addcartbutton (C:\playwright\BYODPages\Byoditemlistingpage.js:43:25)
+      at C:\playwright\tests\Byoditemlisting.spec.js:46:23
+      at C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:3045:9
+      at C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:2537:11
+      at TimeoutManager.withRunnable (C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:1816:14)
+      at TestInfoImpl._runWithTimeout (C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:2535:7)
+      at C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:3043:7
+      at WorkerMain._runTest (C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:3016:5)
+      at WorkerMain.runTestGroup (C:\playwright\node_modules\playwright\lib\worker\workerProcessEntry.js:2911:9)
+      at process.<anonymous> (C:\playwright\node_modules\playwright\lib\common\index.js:1955:25),
+  [Symbol(async_id_symbol)]: 42132,
+  [Symbol(trigger_async_id_symbol)]: 41597,
+  [Symbol(kResourceStore)]: undefined
+}

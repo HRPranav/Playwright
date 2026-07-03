@@ -1,0 +1,468 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Byodaddresspage.spec.js >> onclickcheckout
+- Location: tests\Byodaddresspage.spec.js:129:5
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'page')
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e7]:
+        - generic "Home" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: 
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /home?category=All%20Categories
+          - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e15]:
+          - text: 
+          - generic [ref=e17]:
+            - text: 
+            - generic [ref=e21]:
+              - combobox "Search" [ref=e22]
+              - button "" [ref=e24] [cursor=pointer]
+        - generic [ref=e25]:
+          - link "QR Scan" [ref=e27] [cursor=pointer]:
+            - /url: /qrscan
+            - generic [ref=e28]: 
+            - text: QR Scan
+          - generic "Categories" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]: 
+          - text: 
+          - generic "Points Balance" [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: 
+          - generic "Tender Balances" [ref=e33] [cursor=pointer]:
+            - generic [ref=e34]: 
+          - generic "Cart" [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]:
+              - generic [ref=e37]: 
+              - generic [ref=e38]: "30"
+          - generic "User Profile" [ref=e39] [cursor=pointer]:
+            - figure [ref=e40]
+      - text: 
+    - generic [ref=e42]:
+      - text: 
+      - generic [ref=e43]:
+        - text:  
+        - list [ref=e44]:
+          - listitem [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: All Categories
+          - listitem [ref=e47] [cursor=pointer]:
+            - generic [ref=e48]: Life Style
+          - listitem [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]: Lifestyle
+          - listitem [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: Sports & Outdoors
+        - text:  
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - figure [ref=e55]
+        - generic [ref=e56]: Joseph, You have $3,148.57 out of $3,433.53 to redeem for this transaction.
+        - generic [ref=e58]: 
+      - text: 
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: 
+              - generic [ref=e66]:
+                - heading "Delivery Address" [level=3] [ref=e67]
+                - text: We will deliver your order to this address
+            - button "+ Add a New Address" [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: +
+              - generic [ref=e73]: Add a New Address
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - heading "Add new address for this delivery" [level=4] [ref=e76]
+              - generic [ref=e77]:
+                - generic [ref=e78]: 
+                - generic [ref=e79]: This address will only be used for this transaction and will not be saved for future transactions. PO Box address will not be allowed.
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - generic [ref=e82]:
+                  - generic [ref=e83]:
+                    - generic [ref=e84]: First Name*
+                    - textbox [ref=e89]: PBL2
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: Last Name*
+                    - textbox [ref=e96]: user2
+                - generic [ref=e97]:
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: Phone Number
+                    - textbox [ref=e104]: "8778965414"
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: Email*
+                    - textbox [ref=e111]: a2@qwe.com
+                - generic [ref=e112]:
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Address Line 1*
+                    - textbox [ref=e119]: New horizon college3
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: Address Line 2
+                    - textbox [ref=e126]: New year3
+                - generic [ref=e127]:
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Country *
+                    - group [ref=e130]:
+                      - combobox [ref=e131]:
+                        - option "United States" [selected]
+                        - option "Canada"
+                        - option "Argentina"
+                        - option "Aruba"
+                        - option "Australia"
+                        - option "Austria"
+                        - option "Bahamas"
+                        - option "Bahrain"
+                        - option "Bangladesh"
+                        - option "Barbados"
+                        - option "Belgium"
+                        - option "Belize"
+                        - option "Bermuda"
+                        - option "Bolivia"
+                        - option "Bosnia and Herzegovina"
+                        - option "Botswana"
+                        - option "Brazil"
+                        - option "British Virgin Islands"
+                        - option "Bulgaria"
+                        - option "Cambodia"
+                        - option "Chile"
+                        - option "China"
+                        - option "Christmas Island"
+                        - option "Colombia"
+                        - option "Costa Rica"
+                        - option "Croatia"
+                        - option "Cuba"
+                        - option "Cyprus"
+                        - option "Czech Republic"
+                        - option "Denmark"
+                        - option "Dominica"
+                        - option "Dominican Republic"
+                        - option "Ecuador"
+                        - option "Egypt"
+                        - option "El Salvador"
+                        - option "Estonia"
+                        - option "Finland"
+                        - option "France"
+                        - option "Gabon"
+                        - option "Georgia"
+                        - option "Germany"
+                        - option "Ghana"
+                        - option "Gibraltar"
+                        - option "Greece"
+                        - option "Guatemala"
+                        - option "Haiti"
+                        - option "Honduras"
+                        - option "Hong Kong"
+                        - option "Hungary"
+                        - option "Iceland"
+                        - option "India"
+                        - option "Indonesia"
+                        - option "Ireland"
+                        - option "Isle of Man"
+                        - option "Israel"
+                        - option "Italy"
+                        - option "Ivory Coast"
+                        - option "Jamaica"
+                        - option "Japan"
+                        - option "Jordan"
+                        - option "Kazakhstan"
+                        - option "Kenya"
+                        - option "Kuwait"
+                        - option "Kyrgyzstan"
+                        - option "Latvia"
+                        - option "Lebanon"
+                        - option "Liechtenstein"
+                        - option "Luxembourg"
+                        - option "Macau"
+                        - option "Macedonia"
+                        - option "Malaysia"
+                        - option "Malta"
+                        - option "Mauritius"
+                        - option "Mexico"
+                        - option "Monaco"
+                        - option "Mongolia"
+                        - option "Morocco"
+                        - option "Netherlands"
+                        - option "New Caledonia"
+                        - option "Nicaragua"
+                        - option "Northern Mariana Islands"
+                        - option "Norway"
+                        - option "Pakistan"
+                        - option "Panama"
+                        - option "Papua New Guinea"
+                        - option "Paraguay"
+                        - option "Peru"
+                        - option "Philippines"
+                        - option "Poland"
+                        - option "Portugal"
+                        - option "Qatar"
+                        - option "Reunion"
+                        - option "Romania"
+                        - option "Russia"
+                        - option "Saint Barthelemy"
+                        - option "Saint Lucia"
+                        - option "Saint Martin"
+                        - option "Saint Vincent and the Grenadines"
+                        - option "Saudi Arabia"
+                        - option "Senegal"
+                        - option "Serbia"
+                        - option "Singapore"
+                        - option "Slovakia"
+                        - option "Slovenia"
+                        - option "Solomon Islands"
+                        - option "South Africa"
+                        - option "South Korea"
+                        - option "Spain"
+                        - option "Sri Lanka"
+                        - option "Sweden"
+                        - option "Switzerland"
+                        - option "Taiwan"
+                        - option "Tanzania"
+                        - option "Thailand"
+                        - option "Trinidad and Tobago"
+                        - option "Tunisia"
+                        - option "Turkey"
+                        - option "Turks and Caicos Islands"
+                        - option "Ukraine"
+                        - option "United Arab Emirates"
+                        - option "United Kingdom"
+                        - option "Uruguay"
+                        - option "Venezuela"
+                        - option "Vietnam"
+                        - option "Zimbabwe"
+                      - generic: 
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: State *
+                    - group [ref=e134]:
+                      - combobox [ref=e135]:
+                        - option "Alabama"
+                        - option "Alaska" [selected]
+                        - option "American Samoa"
+                        - option "Arizona"
+                        - option "Arkansas"
+                        - option "California"
+                        - option "Colorado"
+                        - option "Connecticut"
+                        - option "Delaware"
+                        - option "District of Columbia"
+                        - option "Federated States of Micronesia"
+                        - option "Florida"
+                        - option "Georgia"
+                        - option "Guam"
+                        - option "Hawaii"
+                        - option "Idaho"
+                        - option "Illinois"
+                        - option "Indiana"
+                        - option "Iowa"
+                        - option "Kansas"
+                        - option "Kentucky"
+                        - option "Louisiana"
+                        - option "Maine"
+                        - option "Marshall Islands"
+                        - option "Maryland"
+                        - option "Massachusetts"
+                        - option "Michigan"
+                        - option "Minnesota"
+                        - option "Mississippi"
+                        - option "Missouri"
+                        - option "Montana"
+                        - option "Nebraska"
+                        - option "Nevada"
+                        - option "New Hampshire"
+                        - option "New Jersey"
+                        - option "New Mexico"
+                        - option "New York"
+                        - option "North Carolina"
+                        - option "North Dakota"
+                        - option "Ohio"
+                        - option "Oklahoma"
+                        - option "Oregon"
+                        - option "Palau"
+                        - option "Pennsylvania"
+                        - option "Puerto Rico"
+                        - option "Rhode Island"
+                        - option "South Carolina"
+                        - option "South Dakota"
+                        - option "Tennessee"
+                        - option "Texas"
+                        - option "Utah"
+                        - option "Vermont"
+                        - option "Virgin Islands"
+                        - option "Virginia"
+                        - option "Washington"
+                        - option "West Virginia"
+                        - option "Wisconsin"
+                        - option "Wyoming"
+                      - generic: 
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - generic [ref=e138]: City *
+                    - textbox [ref=e143]: Atlanta3
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: Zip Code*
+                    - textbox [ref=e150]: "560347"
+              - generic [ref=e154] [cursor=pointer]:
+                - generic [ref=e155]:
+                  - checkbox "Hello hereby authorize the charging of my LnW card 512 500002 for the total amount of $284.96." [checked] [ref=e156]
+                  - generic:
+                    - img
+                - generic [ref=e158]:
+                  - text: Hello hereby authorize the charging of my LnW card
+                  - strong [ref=e159]: 512 500002
+                  - text: for the total amount of
+                  - strong [ref=e160]: $284.96
+                  - text: .
+        - button "Confirm & Checkout" [ref=e164] [cursor=pointer]:
+          - generic [ref=e165]: Confirm & Checkout
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - heading "Verify your PIN" [level=4] [ref=e169]
+          - generic [ref=e171] [cursor=pointer]: 
+        - text:  
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]: Please enter your PIN to confirm your order
+            - generic [ref=e175]:
+              - generic [ref=e176]: PIN
+              - generic [ref=e180]:
+                - textbox [ref=e181]: "1285"
+                - generic [ref=e182] [cursor=pointer]: 
+          - button "Verify" [active] [ref=e184] [cursor=pointer]
+    - text:      
+  - text: 
+  - generic [ref=e185]:
+    - generic:
+      - img
+      - generic: Just a few seconds...
+```
+
+# Test source
+
+```ts
+  54  |     const item= new Byoditemlistingpage(page);
+  55  |     await page.waitForTimeout(2000)
+  56  |     await item.addcartbutton()
+  57  |     await page.waitForTimeout(2000)
+  58  |     await item.addcartlogobutton()
+  59  |     
+  60  | })
+  61  | 
+  62  | test("proceed to checkout in cart screen",async()=>{
+  63  | 
+  64  |     const cart=new Byodcartpage(page)
+  65  |     await page.waitForTimeout(2000)
+  66  |     await cart.checkoutbutton()
+  67  |     await page.waitForTimeout(10000)
+  68  | })
+  69  | 
+  70  | 
+  71  | 
+  72  | 
+  73  | // addressdata.forEach((data,index)=>{
+  74  | 
+  75  | //     console.log("Keys:", Object.keys(data));
+  76  | 
+  77  | //     test(`address ${data.Firstname || 'missing'} ${index} `,async()=>{
+  78  | 
+  79  | //     const address=new Byodaddresspage(page)
+  80  | 
+  81  | //     await address.firstname1(data.Firstname)
+  82  | 
+  83  | //     await page.waitForTimeout(3000)
+  84  | 
+  85  | //     })
+  86  | 
+  87  | // })
+  88  | 
+  89  | 
+  90  | const cleanData = addressdata.map(row => {
+  91  |   const newRow = {};
+  92  |   for (const key in row) {
+  93  |     newRow[key.trim()] = typeof row[key] === 'string'
+  94  |       ? row[key].trim()
+  95  |       : row[key];
+  96  |   }
+  97  |   return newRow;
+  98  | });
+  99  | 
+  100 | cleanData.forEach((data, index) => {
+  101 |   console.log("Keys:", Object.keys(data));
+  102 |   test(`address ${data.Firstname || 'missing'} ${index}`, async ({ }) => {
+  103 |     const address = new Byodaddresspage(page);
+  104 |     await address.firstname1(data.Firstname);
+  105 |     await page.waitForTimeout(1000)
+  106 |     await address.lastname1(data.Lastname)
+  107 |     await page.waitForTimeout(1000)
+  108 |     await address.phonemo(data.Mobile)
+  109 |     await page.waitForTimeout(1000)
+  110 |     await address.Email1(data.email)
+  111 |     await page.waitForTimeout(1000)
+  112 |     await address.address_1(data.address1)
+  113 |     await page.waitForTimeout(1000)
+  114 |     await address.address_2(data.address2)
+  115 |     await page.waitForTimeout(1000)
+  116 |     await address.city_1(data.city)
+  117 |     await page.waitForTimeout(1000)
+  118 |     await address.zip_1(data.zipcode)
+  119 |     await page.waitForTimeout(1000)
+  120 | 
+  121 |    
+  122 | 
+  123 | 
+  124 |     })
+  125 | 
+  126 |   
+  127 | });
+  128 | 
+  129 | test("onclickcheckout",async()=>{
+  130 | 
+  131 |     const address = new Byodaddresspage(page);
+  132 | 
+  133 |      await page.locator('#country').click()
+  134 |     //await page.selectOption('#country', 'Aruba');
+  135 |     const z=await page.selectOption('#country', 'United States');
+  136 |     if(z=='Canada'){
+  137 |        await page.locator('#state').click()
+  138 |        await page.waitForTimeout(2000)
+  139 |        await page.selectOption('#state', 'British Columbia');
+  140 |     }
+  141 |     else if(z=='United States'){
+  142 |         await page.locator('#state').click()
+  143 |         await page.waitForTimeout(3000)
+  144 |         await page.selectOption('#state', 'Alaska');
+  145 | 
+  146 |     }
+  147 | 
+  148 |         //address header
+  149 |        await expect(address.addressheading()).toHaveText('Address')
+  150 | 
+  151 |        //checkbox clicking
+  152 |        await address.onclickcheckbox()
+  153 |        await address.onclickconfirmcheckout()
+> 154 |        await expect(this.page.locator(address.pinheader)).toHaveText('Verify your PIN')
+      |                          ^ TypeError: Cannot read properties of undefined (reading 'page')
+  155 | 
+  156 |        await expect(this.page.locator(address.pinverify)).toHaveText('PIN Verified! Click Checkout to Proceed.')
+  157 | 
+  158 |        await address.onclickfinalcheckout()
+  159 |        await page.waitForTimeout(8000)
+  160 |     })
+  161 | 
+  162 | 
+  163 | 
+```

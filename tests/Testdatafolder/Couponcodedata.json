@@ -1,0 +1,12 @@
+[
+    {
+        "couponcode": "PBfbqah3zTAF",
+        "run": true,
+        "login":true
+    },
+    {
+        "couponcode": "PBfrE4BaYNYN",
+        "run": false,
+        "login":false
+    }
+]

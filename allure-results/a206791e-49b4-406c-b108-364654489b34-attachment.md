@@ -1,0 +1,190 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: BYODhomepage.spec.js >> Homepage searchtile actions
+- Location: tests\BYODhomepage.spec.js:38:6
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e7]:
+        - generic "Home" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: 
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /home?DEVICEID=INT
+          - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e15]:
+          - text: 
+          - generic [ref=e17]:
+            - text: 
+            - generic [ref=e21]:
+              - combobox "Search" [expanded] [active] [ref=e22]:
+                - text: gift
+                - listbox [ref=e23]:
+                  - option "$1 Gift Gift Card" [ref=e24] [cursor=pointer]:
+                    - generic [ref=e26]: $1 Gift Gift Card
+                  - option "$25 Prepaid Mastercard® Gift Card" [ref=e27] [cursor=pointer]:
+                    - generic [ref=e29]: $25 Prepaid Mastercard® Gift Card
+                  - option "$5 Starbucks Gift Card" [ref=e30] [cursor=pointer]:
+                    - generic [ref=e32]: $5 Starbucks Gift Card
+                  - option "$50 Gift Gift Card" [ref=e33] [cursor=pointer]:
+                    - generic [ref=e35]: $50 Gift Gift Card
+              - generic [ref=e37] [cursor=pointer]: 
+              - button "" [ref=e39] [cursor=pointer]
+        - generic [ref=e40]:
+          - text: 
+          - generic "Categories" [ref=e41] [cursor=pointer]:
+            - generic [ref=e42]: 
+          - text: 
+          - generic "Points Balance" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]: 
+          - generic "Tender Balances" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: 
+          - generic "Cart" [ref=e47] [cursor=pointer]:
+            - generic [ref=e49]: 
+          - generic "User Profile" [ref=e50] [cursor=pointer]:
+            - figure [ref=e51]
+      - text: 
+    - generic [ref=e53]:
+      - text: 
+      - generic [ref=e54]:
+        - text:  
+        - list [ref=e55]:
+          - listitem [ref=e56] [cursor=pointer]:
+            - generic [ref=e57]: All Categories
+          - listitem [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: Clothes, Shoes & Watches
+          - listitem [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]: Lifestyle
+          - listitem [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: Sports & Outdoors
+        - text:  
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - figure [ref=e66]
+        - generic [ref=e67]: Joseph, You have $ 7,033 to redeem for this transaction.
+        - generic [ref=e69]: 
+      - text: 
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e75]:
+          - img [ref=e76]
+          - tabpanel [ref=e77]:
+            - img [ref=e78]
+            - generic [ref=e79]:
+              - heading [level=1] [ref=e80]:
+                - generic [ref=e81]: Welcome, Joseph
+              - paragraph [ref=e82]:
+                - generic [ref=e83]: You can redeem
+                - strong [ref=e84]: $ 7,033
+              - text: 
+          - tabpanel [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e88]:
+              - generic:
+                - generic: PBL_CREDITS
+                - strong: 1,500
+              - generic:
+                - generic: FREE_MONEY
+                - strong: 3,516
+          - tabpanel [ref=e89]
+          - tabpanel [ref=e90]
+          - generic [ref=e91]:
+            - img [ref=e92]
+            - generic [ref=e93]:
+              - heading [level=1] [ref=e94]:
+                - generic [ref=e95]: Welcome, Joseph
+              - paragraph [ref=e96]:
+                - generic [ref=e97]: You can redeem
+                - strong [ref=e98]: $ 7,033
+              - text: 
+          - generic [ref=e99]:
+            - img [ref=e100]
+            - generic [ref=e102]:
+              - generic:
+                - generic: PBL_CREDITS
+                - strong: 1,500
+              - generic:
+                - generic: FREE_MONEY
+                - strong: 3,516
+          - img [ref=e103]
+          - img [ref=e104]
+        - tablist [ref=e105]:
+          - tab "1 of 4" [ref=e106] [cursor=pointer]: "1"
+          - tab "2 of 4" [selected] [ref=e107] [cursor=pointer]: "2"
+          - tab "3 of 4" [ref=e108] [cursor=pointer]: "3"
+          - tab "4 of 4" [ref=e109] [cursor=pointer]: "4"
+      - generic [ref=e110]:
+        - heading "Reward Categories" [level=2] [ref=e112]
+        - generic [ref=e114]:
+          - generic [ref=e115] [cursor=pointer]:
+            - figure [ref=e116]:
+              - img "All Categories" [ref=e117]
+            - generic [ref=e118]: All Categories
+          - generic [ref=e119] [cursor=pointer]:
+            - figure [ref=e120]:
+              - img "Clothes, Shoes & Watches" [ref=e121]
+            - generic [ref=e122]: Clothes, Shoes & Watches
+          - generic [ref=e123] [cursor=pointer]:
+            - figure [ref=e124]:
+              - img "Lifestyle" [ref=e125]
+            - generic [ref=e126]: Lifestyle
+          - generic [ref=e127] [cursor=pointer]:
+            - figure [ref=e128]:
+              - img "Sports & Outdoors" [ref=e129]
+            - generic [ref=e130]: Sports & Outdoors
+      - heading "Today's Top Selling" [level=2] [ref=e132]
+      - generic [ref=e133]:
+        - generic [ref=e134] [cursor=pointer]:
+          - figure [ref=e135]:
+            - img "$1 Gift Gift Card" [ref=e136]
+          - heading "$1 Gift Gift Card" [level=2] [ref=e137]
+          - strong [ref=e138]:
+            - generic [ref=e139]: $ 6
+          - strong
+          - button "Add to cart Go to Cart    " [ref=e141]:
+            - generic [ref=e142]: Add to cart
+            - generic [ref=e143]:
+              - generic [ref=e144]: Go to Cart
+              - generic [ref=e145]:
+                - generic [ref=e146]: 
+                - generic [ref=e147]: 
+                - generic [ref=e148]: 
+                - generic [ref=e149]: 
+        - generic [ref=e150] [cursor=pointer]:
+          - figure [ref=e151]:
+            - img "GOCKERA Portable Fan, 4200mAh Battery Operated Fan, 5" [ref=e152]
+          - heading "GOCKERA Portable Fan, 4200mAh Battery Operated Fan, 5" [level=2] [ref=e153]
+          - strong [ref=e154]:
+            - generic [ref=e155]: $ 16
+          - strong
+          - button "Add to cart Go to Cart    " [ref=e157]:
+            - generic [ref=e158]: Add to cart
+            - generic [ref=e159]:
+              - generic [ref=e160]: Go to Cart
+              - generic [ref=e161]:
+                - generic [ref=e162]: 
+                - generic [ref=e163]: 
+                - generic [ref=e164]: 
+                - generic [ref=e165]: 
+      - paragraph [ref=e166]: You've seen them all.
+      - contentinfo [ref=e167]:
+        - generic [ref=e170]: 2026 Light & Wonder, Inc. and its Subsidiaries. All rights reserved.
+    - text:      
+  - text: 
+```

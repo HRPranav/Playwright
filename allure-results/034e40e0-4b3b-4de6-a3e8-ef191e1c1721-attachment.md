@@ -1,0 +1,238 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: BYODhomepage.spec.js >> Homepage searchtile actions
+- Location: tests\BYODhomepage.spec.js:38:6
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'page')
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e7]:
+        - generic "Home" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: 
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /home?DEVICEID=INT
+          - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e15]:
+          - text: 
+          - generic [ref=e17]:
+            - text: 
+            - generic [ref=e21]:
+              - combobox "Search" [expanded] [active] [ref=e22]:
+                - listbox [ref=e23]:
+                  - option "$1 Gift Gift Card" [ref=e24] [cursor=pointer]:
+                    - generic [ref=e25]: $1 Gift Gift Card
+                  - option "$25 Prepaid Mastercard® Gift Card" [ref=e26] [cursor=pointer]:
+                    - generic [ref=e27]: $25 Prepaid Mastercard® Gift Card
+                  - option "$5 Starbucks Gift Card" [ref=e28] [cursor=pointer]:
+                    - generic [ref=e29]: $5 Starbucks Gift Card
+                  - option "$50 Gift Gift Card" [ref=e30] [cursor=pointer]:
+                    - generic [ref=e31]: $50 Gift Gift Card
+                  - option "adidas Alliance Sackpack – Drawstring Backpack for" [ref=e32] [cursor=pointer]:
+                    - generic [ref=e33]: adidas Alliance Sackpack – Drawstring Backpack for
+                  - option "AIPPK 18K Gold Plated Clover Lucky Bracelet for Women" [ref=e34] [cursor=pointer]:
+                    - generic [ref=e35]: AIPPK 18K Gold Plated Clover Lucky Bracelet for Women
+                  - option "BIC Round Stic Xtra Life Blue Ballpoint Pens, Medium" [ref=e36] [cursor=pointer]:
+                    - generic [ref=e37]: BIC Round Stic Xtra Life Blue Ballpoint Pens, Medium
+                  - option "GOCKERA Portable Fan, 4200mAh Battery Operated Fan, 5" [ref=e38] [cursor=pointer]:
+                    - generic [ref=e39]: GOCKERA Portable Fan, 4200mAh Battery Operated Fan, 5
+                  - option "Hamilton Beach Portable Blender for Shakes and" [ref=e40] [cursor=pointer]:
+                    - generic [ref=e41]: Hamilton Beach Portable Blender for Shakes and
+                  - option "kisnbld Small Exercise Ball, 9 Inch Mini Pilates Ball," [ref=e42] [cursor=pointer]:
+                    - generic [ref=e43]: kisnbld Small Exercise Ball, 9 Inch Mini Pilates Ball,
+                  - option "LeBron James (Sports All-Stars (Lerner ™ Sports))" [ref=e44] [cursor=pointer]:
+                    - generic [ref=e45]: LeBron James (Sports All-Stars (Lerner ™ Sports))
+                  - 'option "My Arcade Casino Player: Retro Arcades, Slot Machine," [ref=e46] [cursor=pointer]':
+                    - generic [ref=e47]: "My Arcade Casino Player: Retro Arcades, Slot Machine,"
+                  - option "SS Gutsy Cricket Bat - Kashmir Willow Cricket Bat" [ref=e48] [cursor=pointer]:
+                    - generic [ref=e49]: SS Gutsy Cricket Bat - Kashmir Willow Cricket Bat
+                  - option "Winning Moves World Football Stars, Guess Who? Green" [ref=e50] [cursor=pointer]:
+                    - generic [ref=e51]: Winning Moves World Football Stars, Guess Who? Green
+              - generic [ref=e53] [cursor=pointer]: 
+              - button "" [ref=e55] [cursor=pointer]
+        - generic [ref=e56]:
+          - text: 
+          - generic "Categories" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: 
+          - text: 
+          - generic "Points Balance" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]: 
+          - generic "Tender Balances" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: 
+          - generic "Cart" [ref=e63] [cursor=pointer]:
+            - generic [ref=e65]: 
+          - generic "User Profile" [ref=e66] [cursor=pointer]:
+            - figure [ref=e67]
+      - text: 
+    - generic [ref=e69]:
+      - text: 
+      - generic [ref=e70]:
+        - text:  
+        - list [ref=e71]:
+          - listitem [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: All Categories
+          - listitem [ref=e74] [cursor=pointer]:
+            - generic [ref=e75]: Clothes, Shoes & Watches
+          - listitem [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: Lifestyle
+          - listitem [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: Sports & Outdoors
+        - text:  
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - figure [ref=e82]
+        - generic [ref=e83]: Joseph, You have $ 7,111 to redeem for this transaction.
+        - generic [ref=e85]: 
+      - text: 
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e91]:
+          - img [ref=e92]
+          - generic [ref=e93]:
+            - img [ref=e94]
+            - generic [ref=e95]:
+              - heading "Welcome, Joseph" [level=1] [ref=e96]:
+                - generic [ref=e97]: Welcome, Joseph
+              - paragraph [ref=e98]:
+                - generic [ref=e99]: You can redeem
+                - strong [ref=e100]: $ 7,111
+              - text: 
+          - generic [ref=e101]:
+            - img [ref=e102]
+            - generic [ref=e104]:
+              - generic:
+                - generic: PBL_CREDITS
+                - strong: 1,500
+              - generic:
+                - generic: FREE_MONEY
+                - strong: 3,555
+          - img [ref=e105]
+          - img [ref=e106]
+          - generic [ref=e107]:
+            - img [ref=e108]
+            - generic [ref=e109]:
+              - heading [level=1] [ref=e110]:
+                - generic [ref=e111]: Welcome, Joseph
+              - paragraph [ref=e112]:
+                - generic [ref=e113]: You can redeem
+                - strong [ref=e114]: $ 7,111
+              - text: 
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - generic [ref=e118]:
+              - generic:
+                - generic: PBL_CREDITS
+                - strong: 1,500
+              - generic:
+                - generic: FREE_MONEY
+                - strong: 3,555
+          - img [ref=e119]
+          - img [ref=e120]
+        - list [ref=e121]:
+          - listitem [ref=e122] [cursor=pointer]:
+            - button "1" [ref=e123]
+          - listitem [ref=e124] [cursor=pointer]:
+            - button "2" [ref=e125]
+          - listitem [ref=e126] [cursor=pointer]:
+            - button "3" [ref=e127]
+          - listitem [ref=e128] [cursor=pointer]:
+            - button "4" [ref=e129]
+      - generic [ref=e130]:
+        - heading "Reward Categories" [level=2] [ref=e132]
+        - generic [ref=e134]:
+          - generic [ref=e135] [cursor=pointer]:
+            - figure [ref=e136]:
+              - img "All Categories" [ref=e137]
+            - generic [ref=e138]: All Categories
+          - generic [ref=e139] [cursor=pointer]:
+            - figure [ref=e140]:
+              - img "Clothes, Shoes & Watches" [ref=e141]
+            - generic [ref=e142]: Clothes, Shoes & Watches
+          - generic [ref=e143] [cursor=pointer]:
+            - figure [ref=e144]:
+              - img "Lifestyle" [ref=e145]
+            - generic [ref=e146]: Lifestyle
+          - generic [ref=e147] [cursor=pointer]:
+            - figure [ref=e148]:
+              - img "Sports & Outdoors" [ref=e149]
+            - generic [ref=e150]: Sports & Outdoors
+      - contentinfo [ref=e151]:
+        - generic [ref=e154]: 2026 Light & Wonder, Inc. and its Subsidiaries. All rights reserved.
+    - text:      
+  - text: 
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect,chromium } from '@playwright/test';
+  2  | import { Byodhomepage } from '../BYODPages/Byodhomepage';
+  3  | import { Byodloginpage } from '../BYODPages/ByodLoginpage';
+  4  | 
+  5  | let page;
+  6  | let context;
+  7  | 
+  8  | test.beforeAll(async ({browser}) => {
+  9  |   
+  10 |   context = await browser.newContext();
+  11 |   page = await context.newPage();
+  12 |   
+  13 | 
+  14 |   await page.goto('https://staging.sgpowerloyalty.com:8443/login?DEVICEID=INT');
+  15 | 
+  16 |   const login =new Byodloginpage(page);
+  17 |      
+  18 |       //Acct no login implementation
+  19 |       await page.waitForTimeout(3000)
+  20 |       await login.AcctnoLogin('500002','1285')
+  21 |       await page.waitForTimeout(1000)
+  22 |       await login.signByod()
+  23 |   
+  24 |       await page.waitForTimeout(10000)
+  25 | });
+  26 | 
+  27 | test("Homepage actions",async({})=>{
+  28 | 
+  29 |     //home page 
+  30 | 
+  31 |     const home=new Byodhomepage(page);
+  32 |     await page.waitForTimeout(3000)
+  33 |     home.onclickclothesandshoes()
+  34 |     await page.waitForTimeout(5000)
+  35 | 
+  36 | })
+  37 | 
+  38 | test.only("Homepage searchtile actions",async({})=>{
+  39 | 
+  40 |     //home page 
+  41 | 
+  42 |     const home=new Byodhomepage(page);
+  43 |     await page.waitForTimeout(3000)
+  44 |     home.tilesearchbox()
+  45 | 
+> 46 |      const x=await this.page.$$('mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger ng-tns-c62-9 ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched')
+     |                         ^ TypeError: Cannot read properties of undefined (reading 'page')
+  47 |      console.log(x)
+  48 |     
+  49 |     await page.waitForTimeout(5000)
+  50 | 
+  51 | })
+  52 | 
+  53 | 
+  54 | 
+```
