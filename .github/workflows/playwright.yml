@@ -4,6 +4,12 @@ on:
     branches: [ feature1]
   pull_request:
     branches: [ feature1] 
+  workflow_dispatch:
+    inputs:
+      test_spec:
+        description: 'Test file, folder, or pattern to run (e.g. tests or tests/mytest.spec.js)'
+        required: false
+        default: 'tests'
 jobs:
   test:
     timeout-minutes: 60
@@ -18,7 +24,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test BYODitemlistingcoupon.spec.js --project=Chromium
+      env:
+        TEST_SPEC: ${{ github.event.inputs.test_spec || 'tests' }}
+      run: npx playwright test $TEST_SPEC --project=Chromium
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
