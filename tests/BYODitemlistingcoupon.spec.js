@@ -26,8 +26,6 @@ test.beforeAll(async({browser})=>{
   
       await page.waitForTimeout(10000)
 
-
-      
 })
 
 //Enable only if navigate to product listing screen in backoffice is set false
