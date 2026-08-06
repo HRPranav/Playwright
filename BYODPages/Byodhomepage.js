@@ -16,6 +16,7 @@ class Byodhomepage{
         this.menulifestyle="//a[normalize-space()='Lifestyle']"
         this.menuasportsoutdoors="//a[normalize-space()='Sports & Outdoors']"
 
+        
         //search tile locators
         this.searchbox="//input[@id='mat-input-3']"
         this.searchicon="//button[@type='submit']"
@@ -23,6 +24,11 @@ class Byodhomepage{
         this.multipleplayerbalanceicon="//span[@class='icon-hand-coin-outline']" 
         this.carticon="//span[@class='icon-cart']"; 
         
+        //multiple player balance screen locators
+        this.playerbalanceheader="//div[@class='header-title']/h2/span"
+        this.cancelbtn="//div[@class='tender-overlay-header']/button[@class='close-btn']"
+
+
         this.homeicon="//div[@title='Home']//i[@class='icon-home']"
         this.userprofile="//figure[@id='profileIconImg']"
         this.hambergermenu="(//div[@class='pblHamburger'])[1]"
@@ -82,5 +88,10 @@ class Byodhomepage{
         }
 
         
+        //multiple player balance screen methods
+
+        async clickcancelbtn(){
+            await this.page.click(this.cancelbtn)
+        }
 
 }

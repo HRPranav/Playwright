@@ -38,7 +38,7 @@ test.skip("Homepage actions",async({})=>{
 
 })
 
-test.only("Homepage searchtile actions",async({})=>{
+test.skip("Homepage searchtile actions",async({})=>{
 
     //home page 
 
@@ -47,7 +47,7 @@ test.only("Homepage searchtile actions",async({})=>{
     //home.tilesearchbox()
   
     //await page.locator("//span[@class='icon-search']").click()
-    await page.getByPlaceholder('Search').fill('gift');
+    await page.getByPlaceholder('Search').fill('Canada');
     await page.waitForSelector("(//span[@class='mat-option-text'])[2]")
 
     const x=await page.$$("(//span[@class='mat-option-text'])[2]")
@@ -55,9 +55,9 @@ test.only("Homepage searchtile actions",async({})=>{
     for(let m of x){
         const r=await m.textContent()
 
-        if(r.includes("Lipton Peach Iced Tea, 16.9 Fl Oz Bottles (Pack of 12) ")){
+        if(r.includes("Canada Dry Zero Sugar Cherry Gingerale Fruit Splash")){
            await m.click()
-            console.log("gift item found")
+            console.log("item found")
         }
     }
 
@@ -67,7 +67,7 @@ test.only("Homepage searchtile actions",async({})=>{
 
 })
 
-test("Click action usermenu",async({})=>{
+test.skip("Click action usermenu",async({})=>{
 
     const home=new Byodhomepage(page);
     
@@ -83,4 +83,23 @@ test.skip("shopping cart quantity selection",async({})=>{
     await cart.quantityclick();
 })
 
+test("Muliple player balance screen",async({})=>{
+
+    const home=new Byodhomepage(page);
+    await home.tilemultipleplayerbalicon()
+
+    await page.waitForSelector(home.playerbalanceheader)
+    await expect(page.locator(home.playerbalanceheader)).toHaveText('Player Balances')
+    await page.waitForTimeout(3000)
+
+    await page.getByRole('button', { name: 'View Details' }).first().click();
+    await page.waitForTimeout(2000)
+    await page.getByRole('button', { name: 'View Details' }).click();
+    await page.waitForTimeout(2000)
+
+    await home.clickcancelbtn()
+
+    await page.waitForTimeout(2000)
+
+})
 
