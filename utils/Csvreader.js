@@ -7,7 +7,7 @@ export function readCSV(filePath){
     const fullPath = path.resolve(filePath);
     console.log ('Full File Path ', fullPath)
 
-    const fileContent = fs.readFileSync(filePath);
+    const fileContent = fs.readFileSync(fullPath);
 
     const records = parse(fileContent,{
         columns: true,  //This one reads the first row key

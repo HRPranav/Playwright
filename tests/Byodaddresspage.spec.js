@@ -6,7 +6,7 @@ import { Byodcartpage } from "../BYODPages/Byodcartpage"
 import { Byodaddresspage } from "../BYODPages/Byodaddresspage"
 import { readCSV } from "../utils/Csvreader"
 
-const addressdata= readCSV('c:/playwright/tests/Testdatafolder/Addressdata.csv')
+const addressdata= readCSV('tests/Testdatafolder/Addressdata.csv')
 
 
 

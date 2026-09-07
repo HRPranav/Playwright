@@ -3,11 +3,11 @@ import { Byodloginpage } from '../BYODPages/ByodLoginpage';
 import { readCSV } from '../utils/Csvreader';
 import { readExcel } from '../utils/Excelreader';
 
-const coupons =require('c:/playwright/tests/Testdatafolder/Couponcodedata.json')
+const coupons =require('./Testdatafolder/Couponcodedata.json')
 
-const logindata=readCSV('c:/playwright/tests/Testdatafolder/Logindata.csv')
+const logindata=readCSV('tests/Testdatafolder/Logindata.csv')
 
-const userdata=readExcel('c:/playwright/tests/Testdatafolder/Exceldata.xlsx','Sheet1')
+const userdata=readExcel('tests/Testdatafolder/Exceldata.xlsx','Sheet1')
 
 test.describe.configure({ mode: 'serial' });
 
