@@ -1,0 +1,86 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Tags.spec.js >> get started link
+- Location: tests\Tags.spec.js:29:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://playwright.dev/", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | test('Test1', { tag: '@smoke' },async ({page})=>{
+  4  | 
+  5  | 
+  6  |    await page.goto('https://demo.nopcommerce.com/register')
+  7  | 
+  8  |     await expect(page).toHaveURL('https://demo.nopcommerce.com/register')
+  9  | 
+  10 |     await expect(page).toHaveTitle('Just a moment...')
+  11 | 
+  12 |    
+  13 | 
+  14 | })
+  15 | 
+  16 | test("Test2",{tag: '@regression'},async ({page})=>{
+  17 | 
+  18 |     console.log("This is regression test 1")
+  19 | 
+  20 | })
+  21 | 
+  22 | test('has title', {tag: '@smoke'}, async ({ page }) => {
+  23 |   await page.goto('https://playwright.dev/');
+  24 | 
+  25 |   // Expect a title "to contain" a substring.
+  26 |   await expect(page).toHaveTitle(/Playwright/);
+  27 | });
+  28 | 
+  29 | test('get started link',{tag: '@regression'}, async ({ page }) => {
+> 30 |   await page.goto('https://playwright.dev/');
+     |              ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  31 | 
+  32 |   // Click the get started link.
+  33 |   await page.getByRole('link', { name: 'Get started' }).click();
+  34 | 
+  35 |   // Expects page to have a heading with the name of Installation.
+  36 |   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  37 | });
+  38 | 
+  39 | test("Test3", { tag: '@smoke' },async ({page})=>{
+  40 | 
+  41 |     console.log("This is test3")
+  42 | 
+  43 | })
+  44 | 
+  45 | test("Test4" ,{tag: '@regression'},async ({page})=>{
+  46 | 
+  47 |     console.log("This is test4")
+  48 | 
+  49 | })
+  50 | 
+  51 | 
+  52 | test("Test5@san@reg",async ({page})=>{
+  53 | 
+  54 |     console.log("This is test5")
+  55 | 
+  56 | })
+  57 |    
+```

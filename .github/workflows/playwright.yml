@@ -36,7 +36,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Smoke Suite
-        if: github.event.inputs.test_suite == 'smoke' || github.event_name == 'pull_request'
+        if: github.event.inputs.test_suite == 'smoke' || github.event_name == 'push'
         run: npx playwright test --grep "@smoke"
 
       - name: Run Regression Suite
