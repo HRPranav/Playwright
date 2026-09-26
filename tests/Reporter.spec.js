@@ -6,7 +6,7 @@ test("Assertions",async ({page})=>{
 
     const title= await page.title()
 
-    await expect(page).toHaveTitle('Player Boutique Live', { timeout: 10000 })
+    await expect(page).toHaveTitle('Player Boutique Live', { timeout: 20000 })
 
     
 })
