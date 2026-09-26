@@ -48,7 +48,7 @@ test('Pages',async()=>{
     await expect(newpage).toHaveTitle("OrangeHRM: All in One HR Software for Businesses | OrangeHRM")
 
     await page1.waitForTimeout(5000)
-    await newpage.waitForTimeout(5000)
+    await newpage.waitForTimeout(4000)
 
     await browser.close()
 })
